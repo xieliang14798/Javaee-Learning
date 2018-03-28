@@ -1,4 +1,4 @@
-package module.jdbc.demo;
+package com.javaee.learning;
 
 public class User {
     private int id;

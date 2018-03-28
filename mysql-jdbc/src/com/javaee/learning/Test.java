@@ -1,6 +1,4 @@
-package module.jdbc.demo;
-
-import module.jdbc.utils.JDBCUtils;
+package com.javaee.learning;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JDBCDemo {
+public class Test {
     public static void main(String[] args) throws SQLException {
         Connection con = JDBCUtils.getCon();
         PreparedStatement statement = con.prepareStatement

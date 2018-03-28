@@ -1,4 +1,4 @@
-package module.jdbc.utils;
+package com.javaee.learning;
 
 import java.io.InputStream;
 import java.sql.*;
@@ -13,7 +13,7 @@ public class JDBCUtils {
     static {
         try {
             /*获取数据库配置*/
-            InputStream in = JDBCUtils.class.getResourceAsStream("database.properties");
+            InputStream in = JDBCUtils.class.getClassLoader().getResourceAsStream("database.properties");
             Properties pro = new Properties();
             pro.load(in);
             String driverClass = pro.getProperty("driverClass");
